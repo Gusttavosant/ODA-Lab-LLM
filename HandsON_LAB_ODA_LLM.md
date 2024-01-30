@@ -235,7 +235,7 @@ Em Sinônimos, digite pequeno e clique em Enter. Digite mini, em seguida, clique
 
 ![Alt text](./Screenshot_16.png "a title")
 
-## Associe as entidades à intenção da OrderPizza
+## Associe as entidades à intenção da Comprar Pizza
 
 * Para que uma entidade seja reconhecida ao analisar a mensagem de entrada do usuário, ela precisa ser associada às intenções apropriadas. Nesse caso, precisamos associar a entidade de bag com a intenção Comprar Pizza.
 
