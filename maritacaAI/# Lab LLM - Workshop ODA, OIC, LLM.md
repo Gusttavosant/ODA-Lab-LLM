@@ -1,4 +1,4 @@
-#DEVELOPER FAST TRACK - HandsON Lab ODA e LLM
+# DEVELOPER FAST TRACK - HandsON Lab ODA e LLM
 
 ## Lab Maritaca AI - LLM
 
