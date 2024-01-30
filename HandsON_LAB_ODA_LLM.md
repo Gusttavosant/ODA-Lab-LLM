@@ -28,7 +28,7 @@ Neste laboratório vamos criar:
 * Após provisionado, abra o ambiente e clique em "Service Console" para acessar seu ODA
 ![Alt text](./5.png "a title")
 
-### 2. Configurar API Services para as integrações com OIC e LLM
+### 2. Configurar API Services para as integrações com LLM
 
 * Está é a tela inicial da console do Oracle Digital Assistant"
 ![Alt text](./6.png "a title")
@@ -42,7 +42,7 @@ Neste laboratório vamos criar:
 * Em Create REST Service adicione um nome, passe o Endpoint do Maritaca AI e em Method, selecione POST
 ![Alt text](./14.png "a title")
 
-* Desça até HEADERS e em KEY escreve "authorization" e em VALUE passe key e sua chave API como mostra na imagem:
+* Desça até HEADERS e em KEY escreva "authorization" e em VALUE passe key e sua chave API como mostra na imagem:
 ![Alt text](./15.png "a title")
 
 * Em Request, Content Type selecione application/json e em Body, adicione o texto abaixo: 
@@ -84,7 +84,7 @@ Neste laboratório vamos criar:
 * No exemplo do Lab, você criará intenções para pedir pizza, cancelar um pedido e registrar uma reclamação. A intenção de pedir pizza é uma intenção regular, o que significa que ela é mapeada para um fluxo específico que provavelmente envolverá uma ou mais trocas entre o usuário e a habilidade. As intenções de cancelar pizza e registrar reclamação são intenções de resposta, o que significa que os usuários que expressarem essas intenções receberão uma resposta estática simples. 
 
 * Edite o nome para "comprar pizza"
-![Alt text](./22.png "a title")
+![Alt text](./lab1.png "a title")
 
 * Desça a pagina até Uterrances to ADD e clique em "advanced input mode"
 ![Alt text](./23.png "a title")
@@ -105,7 +105,7 @@ Quero pedir pizza para o almoço
 Vocês têm pizzas de massa grossa disponíveis?
 Pedir pizza!
 
-![Alt text](./24.png "a title")
+![Alt text](./Screenshot_1.png "a title")
 
 * Criar a intenção de cancelar pizza
 
@@ -114,11 +114,11 @@ Pedir pizza!
 * Clique em Add Intent
 
 * Edite o nome para "Cancelar pizza"
-![Alt text](./22.png "a title")
+![Alt text](./Screenshot_2.png "a title")
 
 * Clique no lapis em Answer (resposta) e adicione o texto: "Sinto muito em ouvir isso, estou cancelando seu pedido!"
 
-![Alt text](./27.png "a title")
+![Alt text](./Screenshot_33.png "a title")
 
 
 * Desça a pagina até Uterrances to ADD e clique em "advanced input mode"
@@ -138,10 +138,10 @@ Preciso cancelar meu pedido
 Por favor, cancele meu pedido de pizza
 Por favor, não entregue minha pizza
 
-![Alt text](./24.png "a title")
+![Alt text](./Screenshot_3.png "a title")
 
 * No topo da pagina, clique em Train e depois Submit, aguarde até o treino ser concluido. Pode demorar alguns minutos.
-![Alt text](./27.png "a title")
+![Alt text](./Screenshot_4.png "a title")
 
 * Teste seu modelo
 
@@ -151,7 +151,7 @@ Por favor, não entregue minha pizza
 
 * No campo Utterance, digite "Desejo pedir pizza". Em seguida, clique no botão Testar (localizado no canto inferior direito do testador) e observe os resultados do teste.
 
-![Alt text](./27.png "a title")
+![Alt text](./Screenshot_5.png "a title")
 
 ## Criar entidades
 * Agora é hora de adicionar entidades, que detectam informações na entrada do usuário que podem ajudar a intenção de atender a uma solicitação do usuário.
@@ -173,15 +173,17 @@ Em Sinônimos, digite pequeno e clique em Enter. Digite mini, em seguida, clique
 
 * Repita os passos para o tamanho medio e grande como mostra na imagem
 
-![Alt text](./27.png "a title")
-![Alt text](./27.png "a title")
+![Alt text](./Screenshot_6.png "a title")
+![Alt text](./Screenshot_7.png "a title")
+![Alt text](./Screenshot_8.png "a title")
+
 
 * Sua Entidade "TamanhoPizza" deve possuir estes valores:
-![Alt text](./27.png "a title")
+![Alt text](./Screenshot_9.png "a title")
 
 * Repita os passos anteriores para criar uma nova entidade para os sabores de pizza:
 
-![Alt text](./27.png "a title")
+![Alt text](./Screenshot_10.png "a title")
 
 * Editar prompts para as entidades
 
@@ -193,11 +195,11 @@ Em Sinônimos, digite pequeno e clique em Enter. Digite mini, em seguida, clique
 
 * Na linha do prompt padrão ("Please enter TamanhoPizza?"), clique em Ícone Editar, substitua o texto por Qual tamanho você gostaria para sua pizza? Em seguida, clique em Enter.
 
-![Alt text](./27.png "a title")
+![Alt text](./Screenshot_11.png "a title")
 
 * Faça o mesmo com SaborPizza passando a frase "Qual Sabor de pizza você gostaria?"
 
-![Alt text](./27.png "a title")
+![Alt text](./Screenshot_12.png "a title")
 
 * Mais adiante no tutorial, você notará que a habilidade usará esses prompts quando precisar pedir ao usuário o tamanho da pizza e o sabor da pizza.
 
@@ -210,10 +212,9 @@ Em Sinônimos, digite pequeno e clique em Enter. Digite mini, em seguida, clique
 * No campo Nome, insira bagPizza
 
 * Na seção Configuração, selecione "Composite bag" no menu Tipo e clique em Criar.
+![Alt text](./Screenshot_13.png "a title")
 
 * Para adicionar as entidades que são gerenciadas pela bag, você precisa criar referências para elas chamadas itens. Clique em + Item.
-
-![Alt text](./27.png "a title")
 
 * Na caixa de diálogo Adicionar Item, substitua BagItem1 no campo Nome por TamanhoPizza
 
@@ -221,18 +222,18 @@ Em Sinônimos, digite pequeno e clique em Enter. Digite mini, em seguida, clique
 
 * Clique em Fechar
 
-![Alt text](./27.png "a title")
+![Alt text](./Screenshot_14.png "a title")
 
 * Repita estas etapas para criar um item para a entidade SaborPizza
 
 * Sua bag deve ter a seguinte aparência: 
 
-![Alt text](./27.png "a title")
+![Alt text](./Screenshot_15.png "a title")
 
 * Clique em Treinar.
 * Selecione Entidade e clique em Enviar.
 
-![Alt text](./27.png "a title")
+![Alt text](./Screenshot_16.png "a title")
 
 ## Associe as entidades à intenção da OrderPizza
 
@@ -242,7 +243,7 @@ Em Sinônimos, digite pequeno e clique em Enter. Digite mini, em seguida, clique
 * Selecione a intenção Comprar Pizza.
 * Clique no menu suspenso Adicionar Entidade (no canto superior direito da página), digite no Campo de Filtro e selecione bagPizza
 
-![Alt text](./27.png "a title")
+![Alt text](./Screenshot_17.png "a title")
 
 * Retreine o modelo com o Trainer Tm.
 
@@ -255,7 +256,7 @@ Em Sinônimos, digite pequeno e clique em Enter. Digite mini, em seguida, clique
 
 * No campo Utterance da caixa de diálogo, digite "Desejo pedir uma pizza pequena de calabresa" e clique em Testar.
 
-![Alt text](./27.png "a title")
+![Alt text](./Screenshot_18.png "a title")
 
 * Como as entidades são reconhecidas na entrada do usuário, a habilidade não precisa pedir ao usuário essas informações mais tarde no fluxo.
 
@@ -276,55 +277,53 @@ Em Sinônimos, digite pequeno e clique em Enter. Digite mini, em seguida, clique
 
 * Selecione a intenção Comprar Pizza e clique em criar
 
-![Alt text](./27.png "a title")
+![Alt text](./Screenshot_20.png "a title")
 
 * No editor de fluxo de diálogo, passe o mouse sobre o nó Iniciar (Start) para exibir seu menu "...". Clique no menu e, em seguida, clique em Adicionar estado inicial.
 
-![Alt text](./27.png "a title")
+![Alt text](./Screenshot_21.png "a title")
 
 * Selecione Send Message, cliquem em inserir
 
-![Alt text](./27.png "a title")
+![Alt text](./Screenshot_22.png "a title")
 
 * Adicione o texto no campo de mensagem "Certo, vamos iniciar seu pedido!"
 
-![Alt text](./27.png "a title")
+![Alt text](./Screenshot_23.png "a title")
 
 Clique em adicionar novamente e vá até a terceira opção "Resolve Composite Bag"
 
-![Alt text](./27.png "a title")
-![Alt text](./27.png "a title")
+![Alt text](./Screenshot_24.png "a title")
+![Alt text](./Screenshot_25.png "a title")
 
 * Crie uma variavel para adicionar a bag como mostra a imagem
 * Passe as informações a seguir
-![Alt text](./27.png "a title")
-![Alt text](./27.png "a title")
+![Alt text](./Screenshot_26.png "a title")
+![Alt text](./Screenshot_27.png "a title")
 
 * Clique em ... e adicione outro estado.
 * Selecione Send Message, cliquem em inserir
 
-![Alt text](./27.png "a title")
-
 * Adicione o texto no campo de mensagem "Sua Pizza ${pizza.value.TamanhoPizza.value} de ${pizza.value.SaborPizza.value} será entregue o mais rapido possivel"
 
-![Alt text](./27.png "a title")
+![Alt text](./Screenshot_30.png "a title")
 
 * Lembre-se os nomes dos campos da bag e variaveis devem ser exatamente como mostra no exemplo para não acarretar em erros.
 
 * Quando terminar, o fluxo deve ter a seguinte aparência:
 
-![Alt text](./27.png "a title")
+![Alt text](./Screenshot_29.png "a title")
 
 ## Teste sua habilidade
 
 * Clique em Preview e teste sua habilidade para comprar pizza e cancelar pedido
-![Alt text](./27.png "a title")
+![Alt text](./Screenshot_32.png "a title")
 
-![Alt text](./27.png "a title")
+![Alt text](./Screenshot_31.png "a title")
 
 * Teste a intenção de cancelar
 
-![Alt text](./27.png "a title")
+![Alt text](./Screenshot_34.png "a title")
 
 * Em UnresolvedIntent, clique no primeiro State e clique em "add precending state"
 ![Alt text](./55.png "a title")
