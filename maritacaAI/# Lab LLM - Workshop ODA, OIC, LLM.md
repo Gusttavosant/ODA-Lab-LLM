@@ -14,7 +14,10 @@ Neste laboratório vamos acessa a solução LLM Maritaca AI para pegar uma chave
 * Clique no botão verde Entrar e crie uma conta ou faça login como mostra o site
 ![Alt text](./1.png "a title")
 
-* Ao acessar, clique em "Chaves de API no lado inferior como mostra na imagem e gere uma chave API
+* Ao acessar, clique em meu plano e em "Gerencie forma de pagamento", adicione o metodo de pagamento para utilizar a API
+![Alt text](./Screenshot_19.png "a title")
+
+* Após esta etapa, clique em "Chaves de API no lado inferior como mostra na imagem e gere uma chave API
 ![Alt text](./2.png "a title")
 ![Alt text](./3.png "a title")
 
