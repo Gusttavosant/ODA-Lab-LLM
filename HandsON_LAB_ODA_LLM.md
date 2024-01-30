@@ -42,7 +42,7 @@ Neste laboratório vamos criar:
 * Em Create REST Service adicione um nome, passe o Endpoint do Maritaca AI e em Method, selecione POST
 ![Alt text](./14.png "a title")
 
-* Desça até HEADERS e em KEY escreva "authorization" e em VALUE passe key e sua chave API como mostra na imagem:
+* Desça até HEADERS e em KEY escreva "authorization" e em VALUE passe "Key" com a inicial maiusculo e sua chave API como mostra na imagem:
 ![Alt text](./15.png "a title")
 
 * Em Request, Content Type selecione application/json e em Body, adicione o texto abaixo: 
