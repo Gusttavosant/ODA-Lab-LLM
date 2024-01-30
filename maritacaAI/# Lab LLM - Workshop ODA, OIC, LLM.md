@@ -1,4 +1,4 @@
-# Lab LLM - Workshop ODA, OIC, LLM
+# Lab LLM - Workshop ODA e LLM
 
 Criando chave de API para acesso ao Maritalk AI.
 
@@ -23,8 +23,8 @@ Neste laboratório vamos acessa a solução LLM Maritaca AI para pegar uma chave
 
 * Salve sua chave para utilizar no Lab de Oracle Digital Assistant
 
-### Entre no LINK abaixo para seguir para a proxima etapa - Lab OIC
-* [LAB OIC - Workshop ODA, OIC, LLM](https://github.com/Gusttavosant/Workshop_ODA_OIC_LLM/blob/main/ODA%20OIC%20LAB%20FAST%20TRACK/OIC%20LAB/HandsON.md)
+### Entre no LINK abaixo para seguir para a proxima etapa - Lab ODA
+* [LAB ODA - Workshop ODA e LLM]([https://github.com/Gusttavosant/Workshop_ODA_OIC_LLM/blob/main/ODA%20OIC%20LAB%20FAST%20TRACK/OIC%20LAB/HandsON.md](https://github.com/Gusttavosant/ODA-Lab-LLM/blob/main/HandsON_LAB_ODA_LLM.md))
 
 ## Documentacões adicionais
 
